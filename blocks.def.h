@@ -10,7 +10,7 @@ static const Block blocks[] = {
 
 	{"🧠 ", "~/.config/dwmblocks/ramusage.sh",	1,		0},
 
-	{"📆 ", "date '+%b %d (%a) %H:%M%p'",		60,		0},
+	{"📆 ", "date '+%b %d (%a) %H:%M%p'",		1,		0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
