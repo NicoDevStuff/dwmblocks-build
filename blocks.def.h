@@ -15,7 +15,7 @@ static const Block blocks[] = {
 
 	{"📆 ", "date '+%b %d (%a)'",				1,		0},
 
-	{"", "~/.config/dwmblocks/time.sh",		0,		2},
+	{"", "~/.config/dwmblocks/time.sh",			0,		2},
 	
 	SPACER
 };
