@@ -1,4 +1,6 @@
 #define SPACER {"", "echo "	"",					0,		0},
+// Uncomment if you want a battery icon
+// #define BATTERY
 
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
@@ -9,6 +11,12 @@ static const Block blocks[] = {
 	
 	{"💻 ", "~/.config/dwmblocks/cpuusage.sh",	6,		1},
 	
+	#ifdef BATTERY
+
+	{"", "~/.config/dwmblocks/battery.sh",		6,		1},
+
+	#endif
+
 	{"🔥 ", "~/.config/dwmblocks/cputemp.sh",	6,		1},
 
 	{"🧠 ", "~/.config/dwmblocks/ramusage.sh",	6,		1},
