@@ -13,7 +13,7 @@ static const Block blocks[] = {
 	
 	#ifdef BATTERY
 
-	{"", "~/.config/dwmblocks/battery.sh",		6,		1},
+	{"", "~/.config/dwmblocks/battery.sh",		1,		2},
 
 	#endif
 
