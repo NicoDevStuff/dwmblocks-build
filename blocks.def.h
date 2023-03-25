@@ -1,6 +1,8 @@
 #define SPACER {"", "echo "	"",					0,		0},
 // Uncomment if you want a battery icon
 // #define BATTERY
+// Uncomment if you want caps module
+#define CAPS
 
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
@@ -14,6 +16,12 @@ static const Block blocks[] = {
 	#ifdef BATTERY
 
 	{"", "~/.config/dwmblocks/battery.sh",		1,		2},
+
+	#endif
+	
+	#ifdef CAPS
+
+	{"", "~/.config/dwmblocks/caps.sh",		    1,		2},
 
 	#endif
 
