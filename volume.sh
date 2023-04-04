@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $(pamixer --get-mute) = "true" ]; then
-	echo "🔇"
+	echo " 🔇"
 else 
-	echo "🔊 $(pamixer --get-volume)%"
+	echo " 🔊 $(pamixer --get-volume)%"
 fi

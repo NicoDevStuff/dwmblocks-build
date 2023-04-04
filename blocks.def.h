@@ -1,33 +1,22 @@
 #define SPACER {"", "echo "	"",					0,		0},
 // Uncomment if you want a battery icon
 // #define BATTERY
-// Uncomment if you want caps module
-#define CAPS
 
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	SPACER
+	{"", "~/.config/dwmblocks/volume.sh",		10,		10},
 
-	{"", "~/.config/dwmblocks/volume.sh",		0,		10},
+	{"🔺 ", "~/.config/dwmblocks/uptime.sh",		 60,		          2},
 	
-	{"💻 ", "~/.config/dwmblocks/cpuusage.sh",	6,		1},
-	
+	{"📦 ", "~/.config/dwmblocks/pacmanups.sh",  360,		          9},	
 	#ifdef BATTERY
 
 	{"", "~/.config/dwmblocks/battery.sh",		1,		2},
 
 	#endif
-	
-	#ifdef CAPS
 
-	{"", "~/.config/dwmblocks/caps.sh",		    1,		2},
-
-	#endif
-
-	{"🔥 ", "~/.config/dwmblocks/cputemp.sh",	6,		1},
-
-	{"🧠 ", "~/.config/dwmblocks/ramusage.sh",	6,		1},
+	{"🧠 ", "~/.config/dwmblocks/ramusage.sh",	2,		1},
 
 	{"📆 ", "date '+%b %d (%a)'",				1,		0},
 
